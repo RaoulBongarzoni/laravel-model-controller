@@ -1,7 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Dati da config/data.js: {{ $home }}</h1>
-<p>This is my paragraph content.</p>
-<button class="btn btn-primary">Cliccami</button>
+
+<h1>
+    films
+</h1>
+<ul>
+
+    @foreach ($films as $film)
+    <li>
+        <h1>{{$film->title}}</h1>
+
+
+
+
+    </li>
+    @endforeach
+
+
+</ul>
 @endsection
